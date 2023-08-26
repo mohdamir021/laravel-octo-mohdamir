@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "4a1d8d4e-386e-47c7-8671-581079ddbf95",
+		"name": "MovieAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29340281"
+	},
+	"item": [
+		{
+			"name": "List Movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "PcariComponentToken",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "PcariComponentToken",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:50:18 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:50:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"Title\": \"Movie 1\",\n        \"Genre\": \"Dark\",\n        \"Description\": \"Darker 2.2\",\n        \"created_at\": \"2023-08-25T12:59:17.000000Z\",\n        \"updated_at\": \"2023-08-25T13:05:49.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"Title\": \"Avengers\",\n        \"Genre\": \"Action, Thriller\",\n        \"Description\": \"Iron Man, Thor, and all famous super heroes are here.\",\n        \"created_at\": \"2023-08-25T13:29:46.000000Z\",\n        \"updated_at\": \"2023-08-25T13:29:46.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"Title\": \"The Guardians of The Galaxy\",\n        \"Genre\": \"Action, Thriller, Comedy, Sci-fi\",\n        \"Description\": \"Hop in for an adventure across the galaxy with our human main character.\",\n        \"created_at\": \"2023-08-25T13:31:32.000000Z\",\n        \"updated_at\": \"2023-08-25T13:31:32.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"Title\": \"Movie 1 in Postman\",\n        \"Genre\": \"Action\",\n        \"Description\": \"This is created in Postman\",\n        \"created_at\": \"2023-08-25T17:45:32.000000Z\",\n        \"updated_at\": \"2023-08-25T17:45:32.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"Title\": \"Movie 2 (Edited again) in Postman\",\n        \"Genre\": \"Action (Edited again)\",\n        \"Description\": \"This is edited in Postman\",\n        \"created_at\": \"2023-08-25T17:47:33.000000Z\",\n        \"updated_at\": \"2023-08-25T17:52:45.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"Title\": \"Movie 3 (Edited) in Postman\",\n        \"Genre\": \"Action (Edited) 3\",\n        \"Description\": \"This is edited in Postman 3.1\",\n        \"created_at\": \"2023-08-26T03:49:12.000000Z\",\n        \"updated_at\": \"2023-08-26T03:50:13.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Add movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "PcariComponentToken",
+						"value": "XXX",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/movie/?Title=Movie 2 in Postman&Genre=Action 2&Description=This is created in Postman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movie",
+						""
+					],
+					"query": [
+						{
+							"key": "Title",
+							"value": "Movie 2 in Postman"
+						},
+						{
+							"key": "Genre",
+							"value": "Action 2"
+						},
+						{
+							"key": "Description",
+							"value": "This is created in Postman"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add movie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "PcariComponentToken",
+								"value": "XXX",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/movie/?Title=Movie 3 in Posuman&Genre=Action, Thirller&Description=This is created in Postman 3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movie",
+								""
+							],
+							"query": [
+								{
+									"key": "Title",
+									"value": "Movie 3 in Posuman"
+								},
+								{
+									"key": "Genre",
+									"value": "Action, Thirller"
+								},
+								{
+									"key": "Description",
+									"value": "This is created in Postman 3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:49:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:49:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Data Movie is added\"\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movie/6?Title=Movie 2 (Edited again) in Postman&Genre=Action (Edited again)&Description=This is edited in Postman",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movie",
+						"6"
+					],
+					"query": [
+						{
+							"key": "Title",
+							"value": "Movie 2 (Edited again) in Postman"
+						},
+						{
+							"key": "Genre",
+							"value": "Action (Edited again)"
+						},
+						{
+							"key": "Description",
+							"value": "This is edited in Postman"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Movie",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movie/8?Title=Movie 3 (Edited) in Postman&Genre=Action (Edited) 3&Description=This is edited in Postman 3.1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movie",
+								"8"
+							],
+							"query": [
+								{
+									"key": "Title",
+									"value": "Movie 3 (Edited) in Postman"
+								},
+								{
+									"key": "Genre",
+									"value": "Action (Edited) 3"
+								},
+								{
+									"key": "Description",
+									"value": "This is edited in Postman 3.1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:50:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:50:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Movie data is updated\"\n]"
+				}
+			]
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/movie/7"
+			},
+			"response": [
+				{
+					"name": "Delete Movie",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/movie/5"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:50:45 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Aug 2023 03:50:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Movie data is deleted \"\n]"
+				}
+			]
+		}
+	]
+}
