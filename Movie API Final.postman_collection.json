@@ -1,0 +1,1135 @@
+{
+	"info": {
+		"_postman_id": "dc4757d1-a2ab-4185-a8eb-367bb34df4da",
+		"name": "Movie API Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29340281"
+	},
+	"item": [
+		{
+			"name": "Genre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/genre?genre=horror",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"genre"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "horror"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Genre=Comedy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/genre?genre=comedy",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"genre"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "comedy"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:30:06 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:30:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X3f2798c21f9eb5cfa3e420ce946f07d7"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Movie_ID\": 1,\n            \"Title\": \"The King's Man\",\n            \"Genre\": \"comedy\",\n            \"Description\": \"As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them.\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Genre=Action",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/genre?genre=action",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"genre"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "action"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:30:32 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:30:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X4a5b1da84a93e1f41d3af89db8fa1bbe"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Movie_ID\": 1,\n            \"Title\": \"The King's Man\",\n            \"Genre\": \"action\",\n            \"Description\": \"As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them.\"\n        },\n        {\n            \"Movie_ID\": 2,\n            \"Title\": \"Mighty Morphin Power Rangers: Once & Always\",\n            \"Genre\": \"action\",\n            \"Description\": \"Mighty Morphin Power Rangers: Once & Always is a 2023 American superhero television film serving to commemorate the 30th anniversary of both Mighty Morphin Power Rangers (1993–1995) and the Power Rangers franchise.\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Genre=Horror",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/genre?genre=horror",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"genre"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "horror"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:32:32 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:32:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X667f71e7465bbcb4270f596b9bdb6cab"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Movie_ID\": 3,\n            \"Title\": \"Khanzab\",\n            \"Genre\": \"horror\",\n            \"Description\": \"After his father was beheaded by ninjas in Banyuwangi '98, Rahayu was traumatized to the point where he found it difficult to concentrate on his prayers due to interference from the khanzab.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "TimeSlot",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/timeslot?theater_name=ABC movies&time_start=2020-04-04 00:00:00&time_end=2020-04-05 00:00:00",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"timeslot"
+					],
+					"query": [
+						{
+							"key": "theater_name",
+							"value": "ABC movies"
+						},
+						{
+							"key": "time_start",
+							"value": "2020-04-04 00:00:00"
+						},
+						{
+							"key": "time_end",
+							"value": "2020-04-05 00:00:00"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TimeSlot",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/timeslot?theater_name=ABC movies&time_start=2020-04-04 00:00:00&time_end=2020-04-05 00:00:00",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"timeslot"
+							],
+							"query": [
+								{
+									"key": "theater_name",
+									"value": "ABC movies"
+								},
+								{
+									"key": "time_start",
+									"value": "2020-04-04 00:00:00"
+								},
+								{
+									"key": "time_end",
+									"value": "2020-04-05 00:00:00"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:32:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:32:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X5ba2cdf6cdb651484e14b66783d228ca"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Movie_ID\": 1,\n            \"Title\": \"The King's Man\",\n            \"Theater_name\": \"ABC movies\",\n            \"Start_time\": \"2020-04-04 09:00:00\",\n            \"End_time\": \"2020-04-04 12:00:00\",\n            \"Description\": \"As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them.\",\n            \"Theater_room_no\": 3\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Specific Movie Theater",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/specific_movie_theater?theater_name=ABC movies&d_date=2020-04-04",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"specific_movie_theater"
+					],
+					"query": [
+						{
+							"key": "theater_name",
+							"value": "ABC movies"
+						},
+						{
+							"key": "d_date",
+							"value": "2020-04-04"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Specific Movie Theater",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/specific_movie_theater?theater_name=ABC movies&d_date=2020-04-04",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"specific_movie_theater"
+							],
+							"query": [
+								{
+									"key": "theater_name",
+									"value": "ABC movies"
+								},
+								{
+									"key": "d_date",
+									"value": "2020-04-04"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:33:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:33:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X4eff3751046842d408eae5ccb819827b"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Movie_ID\": 1,\n            \"Title\": \"The King's Man\",\n            \"Theater_name\": \"ABC movies\",\n            \"Start_time\": \"2020-04-04 09:00:00\",\n            \"End_time\": \"2020-04-04 12:00:00\",\n            \"Description\": \"As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them.\",\n            \"Theater_room_no\": 3\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Search performer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/search_performer?performer_name=Matthew Goode",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search_performer"
+					],
+					"query": [
+						{
+							"key": "performer_name",
+							"value": "Matthew Goode"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search performer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/search_performer?performer_name=Matthew Goode",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search_performer"
+							],
+							"query": [
+								{
+									"key": "performer_name",
+									"value": "Matthew Goode"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:33:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:33:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X4fd35010033073a03e63b9505c843257"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Movie_ID\": 1,\n            \"Overall_rating\": 8.6,\n            \"Title\": \"The King's Man\",\n            \"Description\": \"As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Give Rating",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "movie_title",
+							"value": "King's Man",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Alas",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "r_description",
+							"value": "The last scene is predictable, but great as always",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8000/api/give_rating"
+			},
+			"response": [
+				{
+					"name": "Give Rating",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "movie_title",
+									"value": "The Irishman",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Ringo",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "r_description",
+									"value": "A masterpiece!",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/give_rating"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Aug 2023 18:00:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Aug 2023 18:00:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X12a262898e3765f055823dd02efdd217"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Review for The Irishman added by Ringo\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Mighty Morphin Power Rangers: Once & Always",
+							"type": "text"
+						},
+						{
+							"key": "release",
+							"value": "2023-04-19",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "55",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Mighty Morphin Power Rangers: Once & Always is a 2023 American superhero television film serving to commemorate the 30th anniversary of both Mighty Morphin Power Rangers (1993–1995) and the Power Rangers franchise.",
+							"type": "text"
+						},
+						{
+							"key": "mpaa_rating",
+							"value": "---",
+							"type": "text"
+						},
+						{
+							"key": "genre[]",
+							"value": "horror",
+							"type": "text"
+						},
+						{
+							"key": "genre[]",
+							"value": "thriller",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Anggy Umbara",
+							"type": "text"
+						},
+						{
+							"key": "performer[]",
+							"value": "Tika Bravani",
+							"type": "text"
+						},
+						{
+							"key": "performer[]",
+							"value": "Yasamin Jasem",
+							"type": "text"
+						},
+						{
+							"key": "performer[]",
+							"value": "Arswendy Bening Swara",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "Indonesian",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8000/api/add_movie"
+			},
+			"response": [
+				{
+					"name": "Add Movie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Mighty Morphin Power Rangers: Once & Always",
+									"type": "text"
+								},
+								{
+									"key": "release",
+									"value": "2023-04-19",
+									"type": "text"
+								},
+								{
+									"key": "length",
+									"value": "55",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Mighty Morphin Power Rangers: Once & Always is a 2023 American superhero television film serving to commemorate the 30th anniversary of both Mighty Morphin Power Rangers (1993–1995) and the Power Rangers franchise.",
+									"type": "text"
+								},
+								{
+									"key": "mpaa_rating",
+									"value": "---",
+									"type": "text"
+								},
+								{
+									"key": "genre[]",
+									"value": "action",
+									"type": "text"
+								},
+								{
+									"key": "genre[]",
+									"value": "adventure",
+									"type": "text"
+								},
+								{
+									"key": "genre[]",
+									"value": "kids & family",
+									"type": "text"
+								},
+								{
+									"key": "director",
+									"value": "Charlie Haskell",
+									"type": "text"
+								},
+								{
+									"key": "performer[]",
+									"value": "Walter Jones",
+									"type": "text"
+								},
+								{
+									"key": "performer[]",
+									"value": "Steve Cardenas",
+									"type": "text"
+								},
+								{
+									"key": "performer[]",
+									"value": "Catherine Sutherland",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "English",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/add_movie"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:25:18 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Aug 2023 07:25:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X5c05aa652800f7f2454e74538dc0080e"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Successfully added movie Mighty Morphin Power Rangers: Once & Always with Movie_ID 2\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Theater",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start_time",
+							"value": "2020-04-04 09:00:00",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "2020-04-04 12:00:00",
+							"type": "text"
+						},
+						{
+							"key": "room_no",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8000/api/theater/1/1"
+			},
+			"response": [
+				{
+					"name": "Theater",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "start_time",
+									"value": "2020-04-04 09:00:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "2020-04-04 12:00:00",
+									"type": "text"
+								},
+								{
+									"key": "room_no",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/theater/1/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Aug 2023 18:51:42 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Aug 2023 18:51:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X501d48740c349cdae6f188cd3dc4973d"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "Theater slot added"
+				}
+			]
+		}
+	]
+}
