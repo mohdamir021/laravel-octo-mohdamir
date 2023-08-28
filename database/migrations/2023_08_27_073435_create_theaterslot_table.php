@@ -13,11 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('movies', function (Blueprint $table) {
+        Schema::create('theaterslot', function (Blueprint $table) {
             $table->id();
-            $table->string('Title');
-            $table->string('Genre');
-            $table->text('Description');
+
+            //Attributes
+            $table->integer('movie_id');
+            $table->integer('theater_id');
+            $table->dateTime('start_time');
+            $table->dateTime('end_time');
+            $table->integer('room_no');
+            
             $table->timestamps();
         });
     }
@@ -29,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('movies');
+        Schema::dropIfExists('theaterslot');
     }
 };
