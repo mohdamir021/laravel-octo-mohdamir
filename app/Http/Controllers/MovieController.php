@@ -115,16 +115,52 @@ class MovieController extends Controller
         $genre = $request->genre;
         if(!is_scalar($genre))
             $genre = $this->paramToString($genre);
-            //Performer(>1)
-            $performer = $request->performer;
-            if(!is_scalar($performer))
-            $performer = $this->paramToString($performer);
-            
-            // Data
-            $data = [
-                'title' => $request->title,
-                'release' => $request->release,
-                'length' => $request->length,
+        //Performer(>1)
+        $performer = $request->performer;
+        if(!is_scalar($performer))
+        $performer = $this->paramToString($performer);
+
+
+
+
+        // $genres = $request->genre;
+        // $performers = $request->performer;
+        // if(is_scalar($genres)) //If more than 1
+        //     {$genres = array($genres);}
+        // if(is_scalar($performers)) //If more than 1
+        //     {$performer = array($performer);}
+
+        // foreach($genres as $genre){
+        //     $genrelist = // select * from genres where genre_name=$genre;
+        //     $genre_id = 0;
+        //     if(sizeof($genrelist)==0){
+        //         $genre_id = //insertGetID()
+        //     } else {
+        //         $genre_id = $genrelist->first()->genre_id;
+        //     }
+
+        //     //Loop
+        //     //.....
+        // }
+
+        // foreach($performers as $performer){
+        //     $performerlist = // select * from performers where performer_name=$performer;
+        //     $performer_id = 0;
+        //     if(sizeof($performerlist)==0){
+        //         $performer_id = //insertGetID()
+        //     } else {
+        //         $performer_id = $performerlist->first()->performer_id;
+        //     }
+
+        //     //Loop
+        //     //.....
+        // }
+        
+        // Data
+        $data = [
+            'title' => $request->title,
+            'release' => $request->release,
+            'length' => $request->length,
             'description' => $request->description,
             'mpaa_rating' => $request->mpaa_rating,
             'genre' => $genre,
@@ -284,3 +320,33 @@ class MovieController extends Controller
         return $str;
     }
 }
+
+
+// return response()->json([
+//     'Movie' :=> Movie::find($movie_id),
+//     'Genres' :=> $genres,
+//     'Performers' :=> $performers
+// ]);
+
+
+// $overall_rating = "No Rating";
+// $data = array();
+// foreach($movies as $movie){
+//     $ratings = Rating::where('movie_id', '=', $movie->movie_id)->get();
+//     if(sizeof($reviews) > 0){
+//         $count = 0;
+//         foreach($reviews as $r){
+//             $count = $count + $r->rating;
+//         }
+//         $overall_rating = $count / sizeof($reviews);
+//     }
+
+//     array_push($data, [
+//         'Movie_ID' => $movie->id,
+//         "Overall_rating" => $rating,
+//         "Title" => $movie->title,
+//         "Description" => $movie->description
+//     ]);
+// }
+
+// return response()->json(['data'=>$data]);
